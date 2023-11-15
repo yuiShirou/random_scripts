@@ -1,0 +1,8 @@
+merge two multi-dimensional arrays
+
+$array1 = [[1, 20, 23], [2, 3], [4]];
+$array2 = [[], [], [4, 5, 6]];
+
+$array_merged = array_map('array_values', array_unique(array_merge($array1, $array2), SORT_REGULAR));
+
+print_r($array_merged);
